@@ -24,3 +24,25 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.box {
+  width: 100px;
+  height: 100px;
+  background-color: #9911ff;
+  border-radius: 10px;
+}
+/* Primary Button */
+.primary-btn {
+  padding: 13px 26px;
+  background: #8d493a;
+  transition: all 0.3s ease;
+  color: #f3e5da;
+  font-family: "Archivo", sans-serif;
+  font-weight: 600;
+  border-radius: 5px;
+  font-size: 16px;
+}
+.primary-btn:hover {
+  padding: 16px 26px;
+  background: #b85842;
+}
