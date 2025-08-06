@@ -12,7 +12,7 @@ const Nav = () => {
           delay: 0.5,
           ease: [0, 0.71, 0.2, 1.01],
         }}
-        className="pt-[20px]"
+        className="pt-[20px] sticky top-0 z-1 "
       >
         <div className="bg-[#f8ede3] max-w-[700px] mx-auto flex justify-between items-center pt-[5px] pr-[5px] pb-[5px] pl-[20px] rounded-md">
           <Link href="/" className="font-bold text-[#8d493a] text-[20px]">
