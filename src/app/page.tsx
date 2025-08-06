@@ -1,6 +1,9 @@
 "use client";
 import Banner from "@/components/Banner/Banner";
+import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Header/Nav";
+import ImageGrid from "@/components/ImageGrid/ImageGrid";
+import OverlappingCards from "@/components/OverlappingCards/OverlappingCards";
 // import { animate } from "motion";
 // import { useEffect } from "react";
 import { motion } from "framer-motion";
@@ -50,6 +53,9 @@ export default function Home() {
         <h2>a;lskjdflkj</h2>
         <h2>a;lskjdflkj</h2>
       </div>
+      <OverlappingCards />
+      <ImageGrid />
+      <Footer />
     </main>
   );
 }
