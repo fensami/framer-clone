@@ -4,6 +4,7 @@ import Footer from "@/components/Footer/Footer";
 import Nav from "@/components/Header/Nav";
 import ImageGrid from "@/components/ImageGrid/ImageGrid";
 import OverlappingCards from "@/components/OverlappingCards/OverlappingCards";
+import ScrollImages from "@/components/ScrollImages/ScrollImages";
 // import { animate } from "motion";
 // import { useEffect } from "react";
 import { motion } from "framer-motion";
@@ -19,7 +20,7 @@ export default function Home() {
         <Nav />
         <Banner />
       </div>
-      <div>
+      {/* <div>
         <h1>hello</h1>
         <div className="block">
           <motion.h1
@@ -52,9 +53,10 @@ export default function Home() {
         <h2>a;lskjdflkj</h2>
         <h2>a;lskjdflkj</h2>
         <h2>a;lskjdflkj</h2>
-      </div>
-      <OverlappingCards />
-      <ImageGrid />
+      </div> */}
+      {/* <OverlappingCards /> */}
+      {/* <ImageGrid /> */}
+      <ScrollImages />
       <Footer />
     </main>
   );
