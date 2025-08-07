@@ -27,6 +27,12 @@ body {
 html {
   scroll-behavior: smooth;
 }
+.kaku {
+  mask: linear-gradient(0deg, rgba(0, 0, 0, 0) 0%, rgb(0, 0, 0) 100%);
+  will-change: transform;
+  opacity: 1;
+  transform: none;
+}
 /* main {
   align-items: center;
   display: flex;

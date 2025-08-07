@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <main>
-      <div className="relative h-screen w-full">
+      <div className="relative h-screen w-full z-1">
         <Nav />
         <Banner />
       </div>
