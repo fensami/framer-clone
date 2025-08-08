@@ -27,29 +27,7 @@ body {
 html {
   scroll-behavior: smooth;
 }
-/* .kaku {
-  pointer-events: none;
-} */
-/* main {
-  align-items: center;
-  display: flex;
-  flex: none;
-  flex-direction: column;
-  flex-wrap: nowrap;
-  gap: 200px;
-  height: min-content;
-  justify-content: center;
-  overflow: visible;
-  padding: 0 0 200px;
-  position: relative;
-  width: 100%;
-} */
-/* .box {
-  width: 100px;
-  height: 100px;
-  background-color: #9911ff;
-  border-radius: 10px;
-} */
+
 /* Primary Button */
 .primary-btn {
   padding: 12px 26px;

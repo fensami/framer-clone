@@ -63,10 +63,10 @@ export default function OurExpertise() {
   const [activeExpertise, setActiveExpertise] = useState(expertiseData[2]); // Default to Space Planning
 
   return (
-    <section className="px-[50px] md:py-[200px] py-[100px] bg-gradient-to-br from-amber-50 to-orange-50 min-h-screen">
+    <section className="px-[20px] md:px-[30px] lg:px-[50px] md:py-[200px] py-[100px] bg-gradient-to-br from-amber-50 to-orange-50 min-h-screen">
       <div className="">
         {/* Section Header */}
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-16 items-end mb-[60px]">
+        <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 lg:gap-16 items-end mb-[60px]">
           <div></div>
           <div>
             <motion.p
@@ -83,7 +83,7 @@ export default function OurExpertise() {
               initial={{ opacity: 0, y: 30 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.8, delay: 0.2 }}
-              className="text-4xl md:text-5xl lg:text-[64px] font-normal text-amber-900 leading-[64px] max-w-3/4"
+              className="text-4xl md:text-5xl lg:text-[64px] font-normal text-amber-900 leading-[40px] md:leading-[50px] lg:leading-[64px] md:max-w-3/4"
             >
               Selecting the ideal elements to elevate your space
             </motion.h2>
@@ -114,36 +114,12 @@ export default function OurExpertise() {
                       "/placeholder.svg?height=600&width=800&query=modern interior design"
                     }
                     alt={activeExpertise.title}
-                    // fill
-                    // sizes="(max-width: 768px) 100vw, 50vw"
                     height={845}
                     width={888}
                     className="object-cover h-full w-full"
-                    // quality={90}
                   />
                 </motion.div>
               </AnimatePresence>
-
-              {/* Image Overlay with Active Service Info */}
-              {/* <div className="absolute bottom-0 left-0 right-0 bg-gradient-to-t from-black/60 to-transparent p-6 pointer-events-none">
-                <motion.div
-                  key={activeExpertise.id}
-                  initial={{ opacity: 0, y: 20 }}
-                  animate={{ opacity: 1, y: 0 }}
-                  transition={{ duration: 0.4, delay: 0.2 }}
-                  className="text-white"
-                >
-                  <p className="text-sm opacity-80 mb-2">
-                    {activeExpertise.number}
-                  </p>
-                  <h3 className="text-xl font-medium mb-2">
-                    {activeExpertise.title}
-                  </h3>
-                  <p className="text-sm opacity-90">
-                    {activeExpertise.description}
-                  </p>
-                </motion.div>
-              </div> */}
             </div>
           </motion.div>
 

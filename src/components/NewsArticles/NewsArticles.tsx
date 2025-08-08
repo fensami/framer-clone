@@ -35,19 +35,16 @@ const newsArticles = [
 
 export default function NewsArticles() {
   return (
-    <section className="py-[200px] px-[50px] bg-gradient-to-b from-amber-50 to-orange-50">
-      {/* <div className=""> */}
+    <section className="py-[100px] lg:py-[200px] px-[20px] lg:px-[50px] bg-gradient-to-b from-amber-50 to-orange-50">
       {/* Header */}
-      <div className="flex items-end justify-between mb-12 ">
+      <div className="flex items-end justify-between flex-wrap mb-12 ">
         <div>
           <p className="text-amber-800 text-sm font-medium mb-2 flex items-center">
             <span className="w-1 h-1 bg-amber-800 rounded-full mr-2"></span>
             News
           </p>
-          <h2 className="text-[64px] md:text-6xl font-normal text-amber-900 leading-tight">
-            Stay Inspired with
-            <br />
-            <span className="text-amber-800">Interior Trends</span>
+          <h2 className="text-[32px] sm:text-[42px] lg:text-[64px] md:text-6xl font-normal text-amber-900 leading-tight lg:max-w-3/5">
+            Stay Inspired with Interior Trends
           </h2>
         </div>
         <Link
@@ -84,7 +81,7 @@ export default function NewsArticles() {
                 </p>
 
                 {/* Title */}
-                <h3 className="text-[22px]  font-normal text-amber-900 leading-tight group-hover:text-amber-800 transition-colors duration-300 mb-[10px] max-w-2/4">
+                <h3 className="text-[22px]  font-normal text-amber-900 leading-tight group-hover:text-amber-800 transition-colors duration-300 mb-[10px] lg:max-w-2/4">
                   {article.title}
                 </h3>
 
@@ -97,7 +94,6 @@ export default function NewsArticles() {
           </article>
         ))}
       </div>
-      {/* </div> */}
     </section>
   );
 }

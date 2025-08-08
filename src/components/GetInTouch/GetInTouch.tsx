@@ -56,7 +56,7 @@ export default function GetInTouch() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="text-center space-y-8"
             >
-              <h2 className="text-[28px]  font-normal text-amber-900 leading-[34px]">
+              <h2 className="text-[22px] md:text-[28px]  font-normal text-amber-900 md:leading-[34px]">
                 Ready to reimagine your space? Connect with us at Troscán to
                 bring your vision to life with our expertise in design and
                 decoration.
