@@ -1,13 +1,12 @@
-"use client";
+// "use client";
+import About from "@/components/About/About";
 import Banner from "@/components/Banner/Banner";
 import Footer from "@/components/Footer/Footer";
+import GetInTouch from "@/components/GetInTouch/GetInTouch";
 import Nav from "@/components/Header/Nav";
-import ImageGrid from "@/components/ImageGrid/ImageGrid";
-import OverlappingCards from "@/components/OverlappingCards/OverlappingCards";
+import NewsArticles from "@/components/NewsArticles/NewsArticles";
+import OurExpertise from "@/components/OurExpertise/OurExpertise";
 import ScrollImages from "@/components/ScrollImages/ScrollImages";
-// import { animate } from "motion";
-// import { useEffect } from "react";
-import { motion } from "framer-motion";
 
 export default function Home() {
   // useEffect(() => {
@@ -20,6 +19,8 @@ export default function Home() {
         <Nav />
         <Banner />
       </div>
+      <About />
+      <OurExpertise />
       {/* <div>
         <h1>hello</h1>
         <div className="block">
@@ -56,7 +57,11 @@ export default function Home() {
       </div> */}
       {/* <OverlappingCards /> */}
       {/* <ImageGrid /> */}
+
       <ScrollImages />
+      <OurExpertise />
+      <GetInTouch />
+      <NewsArticles />
       <Footer />
     </main>
   );
