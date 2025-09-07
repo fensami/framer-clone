@@ -1,25 +1,21 @@
-import About from "@/components/About/About";
-import Banner from "@/components/Banner/Banner";
-import Footer from "@/components/Footer/Footer";
-import GetInTouch from "@/components/GetInTouch/GetInTouch";
-import Nav from "@/components/Header/Nav";
-import NewsArticles from "@/components/NewsArticles/NewsArticles";
-import OurExpertise from "@/components/OurExpertise/OurExpertise";
-import ScrollImages from "@/components/ScrollImages/ScrollImages";
+import About from "@/components/Pages/HomePage/About/About";
+import Banner from "@/components/Pages/HomePage/Banner/Banner";
+import GetInTouch from "@/components/Pages/HomePage/GetInTouch/GetInTouch";
+import News from "@/components/Pages/HomePage/News/NewsArticles";
+import OurServices from "@/components/Pages/HomePage/OurServices/OurExpertise";
+import ScrollImages from "@/components/Pages/HomePage/ScrollImages/ScrollImages";
+import TransformingSpaces from "@/components/Pages/HomePage/TransformingSpaces/TransformingSpaces";
 
 export default function Home() {
   return (
     <main>
-      <div className="relative h-screen w-full z-1">
-        <Nav />
-        <Banner />
-      </div>
+      <Banner />
       <About />
+      <TransformingSpaces />
       <ScrollImages />
-      <OurExpertise />
+      <OurServices />
       <GetInTouch />
-      <NewsArticles />
-      <Footer />
+      <News />
     </main>
   );
 }

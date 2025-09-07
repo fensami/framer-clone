@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import "./globals.css";
 import { Archivo } from "next/font/google";
+import Nav from "@/components/shared/Nav/Nav";
+import Footer from "@/components/shared/Footer/Footer";
 
 const archivo = Archivo({
   variable: "--font-archivo",
@@ -18,7 +20,11 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={` ${archivo.variable} antialiased`}>{children}</body>
+      <body className={` ${archivo.variable} antialiased`}>
+        <Nav />
+        {children}
+        <Footer />
+      </body>
     </html>
   );
 }

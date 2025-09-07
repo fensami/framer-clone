@@ -59,11 +59,11 @@ const expertiseData = [
   },
 ];
 
-export default function OurExpertise() {
+export default function OurServices() {
   const [activeExpertise, setActiveExpertise] = useState(expertiseData[2]); // Default to Space Planning
 
   return (
-    <section className="px-[20px] md:px-[30px] lg:px-[50px] md:py-[200px] py-[100px] bg-gradient-to-br from-amber-50 to-orange-50 min-h-screen">
+    <section className="px-[20px] md:px-[30px] lg:px-[50px] md:py-[200px] py-[100px]  min-h-screen overflow-hidden">
       <div className="">
         {/* Section Header */}
         <div className="grid grid-cols-1 lg:grid-cols-2 md:gap-8 lg:gap-16 items-end mb-[60px]">
@@ -102,9 +102,13 @@ export default function OurExpertise() {
               <AnimatePresence mode="wait">
                 <motion.div
                   key={activeExpertise.id}
-                  initial={{ opacity: 0, scale: 1.1 }}
-                  animate={{ opacity: 1, scale: 1 }}
-                  exit={{ opacity: 0, scale: 0.95 }}
+                  initial={{
+                    opacity: 0,
+                    y: 100,
+                    transition: { duration: 0.5 },
+                  }}
+                  animate={{ opacity: 1, y: 0, transition: { duration: 0.5 } }}
+                  exit={{ opacity: 0, y: 100, transition: { duration: 0.5 } }}
                   transition={{ duration: 0.5, ease: "easeInOut" }}
                   className="absolute inset-0"
                 >
