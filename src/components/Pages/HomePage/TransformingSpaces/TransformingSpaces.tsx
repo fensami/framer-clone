@@ -145,6 +145,7 @@ const TransformingSpaces = () => {
         height: "200vh",
         overflow: "hidden",
       }}
+      className="hidden xl:block"
     >
       {boxes.map((box, i) => (
         <motion.div
